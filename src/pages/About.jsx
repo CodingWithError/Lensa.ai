@@ -191,13 +191,13 @@ export default function About() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-24 bg-gradient-to-r from-primary-600 via-primary-500 to-secondary-500">
+      <section className="py-24 bg-black/30">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 font-orbitron">
-              Our Impact in <span className="text-space-950">Numbers</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-100 mb-8 font-orbitron">
+              Our Impact in <span className="text-primary-500">Numbers</span>
             </h2>
-            <p className="text-xl text-gray-100 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
               See how we're transforming careers across the globe
             </p>
           </div>
@@ -205,13 +205,13 @@ export default function About() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-6 border border-white/30">
+                <div className="w-16 h-16 bg-primary-500/20 rounded-2xl flex items-center justify-center mx-auto mb-6 border border-primary-500/30">
                   {stat.icon}
                 </div>
-                <div className="text-4xl md:text-5xl font-bold text-white mb-3 font-orbitron">
+                <div className="text-4xl md:text-5xl font-bold text-gray-100 mb-3 font-orbitron">
                   {stat.number}
                 </div>
-                <div className="text-gray-100 text-lg">
+                <div className="text-gray-300 text-lg">
                   {stat.label}
                 </div>
               </div>
@@ -299,25 +299,25 @@ export default function About() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-r from-primary-600 via-primary-500 to-secondary-500">
+      <section className="py-24 bg-black/30">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 font-orbitron">
-            Ready to Transform Your <span className="text-space-950">Career</span>?
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-100 mb-8 font-orbitron">
+            Ready to Transform Your <span className="text-primary-500">Career</span>?
           </h2>
-          <p className="text-xl text-gray-100 mb-12 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
             Join thousands of professionals who have already discovered the power of AI-driven career insights
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link
               to={user ? "/dashboard" : "/register"}
-              className="bg-space-950 text-primary-400 hover:bg-space-900 hover:text-primary-300 font-semibold py-4 px-10 rounded-xl transition-all duration-300 inline-flex items-center space-x-3 border border-primary-400/30 hover:border-primary-300/50"
+              className="btn-primary text-lg px-10 py-4 inline-flex items-center space-x-3"
             >
               <span>{user ? "Go to Dashboard" : "Get Started Free"}</span>
               <ArrowRight className="w-5 h-5" />
             </Link>
             <Link
               to="/"
-              className="border-2 border-white text-white hover:bg-white hover:text-space-950 font-semibold py-4 px-10 rounded-xl transition-all duration-300"
+              className="btn-outline text-lg px-10 py-4"
             >
               Back to Home
             </Link>

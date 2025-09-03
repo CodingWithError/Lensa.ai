@@ -192,19 +192,19 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-r from-primary-600 via-primary-500 to-secondary-500">
+      <section className="py-24 bg-black/30">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 font-orbitron">
-            Ready to Transform Your <span className="text-space-950">Career</span>?
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-100 mb-8 font-orbitron">
+            Ready to Transform Your <span className="text-primary-500">Career</span>?
           </h2>
-          <p className="text-xl text-gray-100 mb-12 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
             Join Lensa.ai today and discover how AI can help you find the perfect job 
             and advance your career to new heights.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link
               to={user ? "/dashboard" : "/register"}
-              className="bg-space-950 text-primary-400 hover:bg-space-900 hover:text-primary-300 font-semibold py-4 px-10 rounded-xl transition-all duration-300 inline-flex items-center space-x-3 border border-primary-400/30 hover:border-primary-300/50"
+              className="btn-primary text-lg px-10 py-4 inline-flex items-center space-x-3"
             >
               <span>{user ? "Go to Dashboard" : "Get Started Free"}</span>
               <ArrowRight className="w-5 h-5" />
@@ -212,7 +212,7 @@ export default function Home() {
             {!user && (
               <Link
                 to="/login"
-                className="border-2 border-white text-white hover:bg-white hover:text-space-950 font-semibold py-4 px-10 rounded-xl transition-all duration-300"
+                className="btn-outline text-lg px-10 py-4"
               >
                 Sign In
               </Link>
